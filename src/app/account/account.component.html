@@ -1,0 +1,90 @@
+
+<div>
+
+    <div class="container" style="padding-top: 8%;">
+        <h1><strong>Account Settings</strong> </h1>
+        <div class="row">
+            <div class="col-4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-actions>
+                        <div class="row" style="padding-left: 12%;">
+                            <button mat-flat-button style="width: 90%;">
+                                <div class="row">
+                                    <div class="col-sm-1"><i class='far fa-user'></i></div>
+                                    <div class="col-sm-1" routerLink="/Setting">Proflie</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="row" style="padding-left: 12%;">
+                            <button mat-flat-button style="width: 90%;">
+                                <div class="row">
+                                    <div class="col-sm-1"><i class='far fa-address-card'></i></div>
+                                    <div class="col-sm-1" routerLink="/Billing">Billing & Plan</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="row" style="padding-left: 12%;">
+                            <button mat-flat-button style="width: 90%;">
+                                <div class="row">
+                                    <div class="col-sm-1"><i class='fas fa-fingerprint'></i></div>
+                                    <div class="col-sm-1" routerLink="/Account">Security</div>
+                                </div>
+                            </button>
+                        </div>
+                    </mat-card-actions>
+
+
+                </mat-card>
+            </div>
+            <div class="col-4" style="width: 55%;">
+                <mat-card>
+                    <div class="row">
+                        <div class="col">
+                            <mat-card-title>Change Password</mat-card-title>
+
+                        </div>
+                        <div class="col" align="end">
+                            <button mat-flat-button>cancel</button>
+                            <button mat-flat-button color="warn">Save change</button>
+                        </div>
+                        <mat-card-subtitle>for a imporved account security</mat-card-subtitle>
+                    </div>
+                    
+<hr>
+                    <div style="padding-left: 20%;">
+                        <form>
+                            <div class="row">
+                                <input required type="FirstName" ngModel name="FirstName" id="FirstName"
+                                    #FirstName="ngModel" placeholder="old password">
+                                <div class="alert alert-danger red" *ngIf="FirstName.touched && !FirstName.valid">First
+                                    Name required</div>
+                            </div>
+                            <div class="row">
+                                <input required type="LastName" ngModel name="LastName" id="LastName"
+                                    #LastName="ngModel" placeholder="New password">
+                                <div class="alert alert-danger red" *ngIf="LastName.touched && !LastName.valid">Last
+                                    Name required</div>
+                            </div>
+                            <div class="row">
+                                <input required type="email" ngModel name="email" id="email" #email="ngModel"
+                                    placeholder="Create password">
+                                <div class="alert alert-danger red" *ngIf="email.touched && !email.valid">email required
+                                </div>
+                            </div>
+                        </form>
+                       
+
+
+                    </div>
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+</div>

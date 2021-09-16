@@ -1,0 +1,62 @@
+
+
+
+<div class="holder">
+    <div class="holder bg-news">
+      <div class="padd">
+        <h1 style="padding-left: 6%;color: white;">forget password</h1>
+        <h3 style="padding-left: 8%;color: white;">required your email</h3>
+        <form>
+          <input required type="email"  ngModel name="email" id="email" #email="ngModel"  placeholder="Email Address">
+          <div class="alert alert-danger red"  *ngIf="email.touched && !email.valid">email required</div>
+        
+          
+        </form>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <button class="button" mat-flat-button>send me Email</button>
+          </div>
+          <div class="col-2">
+        
+          </div><br><br><br>
+          <div class="row">
+            <div class="col-1">
+              <hr style="width: 90px;">
+            </div>
+            <div class="col-1" style="padding-left: 10px; color: white;">
+              Or login with </div>
+            <div class="col-1">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-1">
+               <button mat-button style="background-color: white; color: black; padding-right: 5%; border-radius: 20px;">
+                 <mat-icon><span class="material-icons-outlined">
+                  pan_tool
+                  </span></mat-icon>
+                 google+
+               </button>
+              </div>
+              <div class="col-1">
+               <button mat-button style="background-color: white; color: black; border-radius: 20px;">
+                 <mat-icon>google</mat-icon>
+                 twitter
+               </button>
+              </div>
+              <div class="col-1">
+               <button mat-button style="background-color: white; color: black; border-radius: 20px;">
+                 <mat-icon>google</mat-icon>
+                facebook
+               </button>
+              </div><br><br><br>
+              <a class="forget1"><small>Don't have account?<a class="forget2" routerLink="/Signin" >Register here</a></small></a><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
