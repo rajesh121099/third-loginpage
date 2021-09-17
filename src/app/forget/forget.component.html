@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 <div class="holder">
@@ -59,4 +59,81 @@
   
   
   
+ -->
 
+ <div class="row">
+  <div class="col-8">
+    <div class="holder">
+      <div class="holder bg-news">
+        <div class="padd">
+          <h1 style="padding-left: 10%;color: white;">Forget Password</h1>
+          <h5 style="padding-left: 12%;color: white;">Recover Your Password</h5>
+          <form>
+            <div class="row">
+              <input required type="password" name="password" ngModel id="password" #password="ngModel"
+                placeholder="Password">
+              <div class="alert alert-danger red" *ngIf="password.touched && !password.valid">password required</div>
+            </div>
+          </form>
+          <br>
+          <div class="row">
+            <div class="col-3">
+              <button class="button" mat-flat-button routerLink="/Setting">Resend me Email</button>
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-2">
+                <hr style="width: 90px;">
+              </div>
+              <div class="col-2" style="padding-left: 10px; color: white;">
+                Or login with </div>
+              <div class="col-2">
+                <hr>
+              </div>
+              <!-- <div class="row">
+                <div class="col-sm-1">
+                  <i class="fa fa-google" style="color: #fff;"></i> google+
+                </div>
+                <div class="col-sm-1">
+                  <i class="fa fa-twitter" style="color: #fff;"></i> twitter
+                </div>
+                <div class="col-sm-1">
+                  <i class="fa fa-facebook" style="color: #fff;"></i> facebook
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="col-sm-2">
+                  <button mat-button
+                    style="background-color: white; color: black; padding-right: 5%; border-radius: 20px;">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    google+
+                  </button>
+                </div>
+                <div class="col-sm-2">
+                  <button mat-button style="background-color: white; color: black; border-radius: 20px;">
+                    <i class="fa fa-twitter" style="color:cornflowerblue"></i>
+                    twitter
+                  </button>
+                </div>
+                <div class="col-sm-2">
+                  <button mat-button style="background-color: white; color: black; border-radius: 20px;">
+                    <i class="fa fa-facebook" style="color: blue;"></i>
+                    facebook
+                  </button>
+                </div>
+              
+              </div>
+              <br><br><br>
+              <a class="forget1"><small>Don't have account?<a class="forget2" routerLink="/Login">LogIn
+                    here</a></small></a><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+
+    <img style="padding-top: 25%;"src="../../assets/new_-removebg-preview.png">
+  </div>
+</div>
